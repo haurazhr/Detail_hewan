@@ -2,33 +2,31 @@ package com.example.recycleview.model
 
 import com.example.recycleview.R
 
-
 data class ModelBuah(
     val image: Int, val deskripsi : String
 )
-
-object Mocklist{
-
+//array data
+object MockList{
     fun getModel() : List<ModelBuah>{
         val itemModel1 = ModelBuah(
             R.drawable.apple,
-            "Apple",
+            "Apple"
         )
         val itemModel2 = ModelBuah(
             R.drawable.grapes,
-            "Anggur",
+            "Anggur"
         )
         val itemModel3 = ModelBuah(
             R.drawable.orange,
-            "Jeruk",
+            "jeruk"
         )
         val itemModel4 = ModelBuah(
             R.drawable.pear,
-            "Pear",
+            "Pear"
         )
         val itemModel5 = ModelBuah(
             R.drawable.strawberry,
-            "Strawberry",
+            "Strawberry"
         )
 
         val itemList : ArrayList<ModelBuah> = ArrayList()
@@ -39,5 +37,6 @@ object Mocklist{
         itemList.add(itemModel5)
 
         return itemList
+
     }
 }
